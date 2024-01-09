@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- Include your contact-specific styles if needed -->
+    <link rel="stylesheet" href="contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+	<nav>
+		<a href="AV.html" class="logo"><img src="img/img3.png" alt="Logo"></a>
+		<div class="dropdown">
+			<a href="#about">À propos de nous</a>
+			<div class="dropdown-content">
+				<a href="#">Dropdown Item 1</a>
+				<a href="#">Dropdown Item 2</a>
+				<a href="#">Dropdown Item 3</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a href="#activities">Nos Activités</a>
+			<div class="dropdown-content">
+				<a href="#">Dropdown Item 1</a>
+				<a href="#">Dropdown Item 2</a>
+				<a href="#">Dropdown Item 3</a>
+			</div>
+		</div>
+		<a href="contact.html" class="contact-button">Nous Contacter</a>
+	</nav>
+
+    <!-- Your Contact Page Content Goes Here -->
+    <header>
+        <h1>Contacter nous</h1>
+    </header>
+
+	<section>
+		<p>Merci de nous fournir vos coordonnées et de décrire votre besoin. Un collaborateur vous répondra dans les plus brefs délais:</p>
+
+		<!-- Contact Form -->
+		<form action="sendEmail.php" method="post" id="contact-form">
+			<label for="name">Nom de l'Entreprise:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Décrire votre besoin Sécurité/Ménage:</label>
+			<textarea id="message" name="message" rows="4" required></textarea>
+
+			<button style="font-weight: 300; font-size: 14px;" type="submit"><strong>Envoyer</strong></button>
+		</form>
+	</section>
+
+    <footer>
+        <!-- Include a link back to the home page -->
+        <a href="AV.html">Retour à l'acceuil</a>
+    </footer>
+
+</body>
+</html>
